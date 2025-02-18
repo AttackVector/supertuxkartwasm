@@ -6,7 +6,7 @@
 
     <title>SuperTuxKart</title>
     <link rel="icon" type="image/x-icon" href="https://supertuxkart.pages.dev/favicon.ico">
-    <script src="./SuperTuxKart_files/supertuxkart.js.download"></script>
+    <script src="./supertuxkart.js.download"></script>
     <script>
       //emscripten only tells us if the runtime is ready once it starts main
       //so cancel running main the first time around so we can store when it is ready
@@ -19,7 +19,7 @@
         globalThis.ready = true;
       }
     </script>
-    <script src="./SuperTuxKart_files/script.js.download" type="module" defer=""></script>
+    <script src="./script.js.download" type="module" defer=""></script>
 
     <style>
       * {
@@ -83,7 +83,7 @@
     <canvas id="canvas"></canvas>
     <div id="info_container">
       <div id="header_bar">
-        <img src="./SuperTuxKart_files/supertuxkart_64.png">
+        <img src="./supertuxkart_64.png">
         <h1 style="margin: 0px;">SuperTuxKart Wasm</h1>
       </div>
       <p>This is an experimental port of SuperTuxKart to the browser using WebAssembly and Emscripten. Currently, everything works except for some rendering APIs and networking.</p>
